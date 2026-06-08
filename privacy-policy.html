@@ -367,7 +367,7 @@
   <div class="hero-meta">
     <span>Version 9.5.5</span>
     <span>·</span>
-    <span>Mise à jour le 1 juin 2026</span>
+    <span>Mise à jour le 8 juin 2026</span>
     <span>·</span>
     <span>Gaspicheck-Labs</span>
   </div>
@@ -460,6 +460,13 @@ Pays : France — Union Européenne
       <div class="row-yes"><span class="icon">✓</span><span>Taille du foyer (optionnel — seul / couple / famille / grande famille)</span></div>
       <div class="row-yes"><span class="icon">✓</span><span>Plateforme (iOS ou Android)</span></div>
       <div class="row-yes"><span class="icon">✓</span><span>Identifiant anonyme rotatif (UUID v4) — voir Section 4</span></div>
+      <div class="row-yes"><span class="icon">✓</span><span>Type de déchet (poubelle verte / jaune / bleue)</span></div>
+      <div class="row-yes"><span class="icon">✓</span><span>Statut du produit au moment de l'action (frais / proche péremption / périmé)</span></div>
+      <div class="row-yes"><span class="icon">✓</span><span>Clé de catégorie normalisée (identifiant interne, non-nominatif)</span></div>
+      <div class="row-yes"><span class="icon">✓</span><span>Pays estimé (déduit du fuseau horaire de l'appareil — jamais de géolocalisation GPS)</span></div>
+      <div class="row-yes"><span class="icon">✓</span><span>Labels qualité (Label Rouge, AOC/AOP, Commerce équitable — si disponibles sur Open Food Facts)</span></div>
+      <div class="row-yes"><span class="icon">✓</span><span>Type d'emballage (ex : bouteille en verre, sachet plastique — depuis Open Food Facts)</span></div>
+      <div class="row-yes"><span class="icon">✓</span><span>Événement d'ajout de produit (catégorie, source manuelle ou scan, EAN — sans date exacte)</span></div>
 
       <h3>C. Données de synchronisation (Firestore — compte uniquement)</h3>
       <p>Si tu as un compte, le contenu de ton frigo et tes statistiques sont synchronisés dans Firestore sous ton UID Firebase pour permettre la sauvegarde multi-appareils. Ces données restent privées et ne sont jamais croisées avec les analytics.</p>
@@ -580,7 +587,7 @@ analytics/{anonymousId}/events/{eventId}
         </tr>
         <tr>
           <td>Événements analytics anonymisés</td>
-          <td>Conservés après suppression de compte — données anonymes agrégées non soumises au droit à l'effacement (considérant 26 RGPD)</td>
+          <td>24 mois glissants — suppression automatique le 1er de chaque mois (Art. 5.1.e RGPD). Conservés après suppression de compte — données anonymes agrégées non soumises au droit à l'effacement (considérant 26 RGPD)</td>
         </tr>
         <tr>
           <td>Index produits agrégés (products/ean)</td>
@@ -711,7 +718,7 @@ analytics/{anonymousId}/events/{eventId}
   </div>
 
   <div class="footer">
-    <strong>GasPi-Check</strong> · Politique de confidentialité V9.5.5 · Entrée en vigueur le 29 avril 2026. Mise à jour le 1er juin 2026<br>
+    <strong>GasPi-Check</strong> · Politique de confidentialité V9.5.5 · Entrée en vigueur le 29 avril 2026. Mise à jour le 8 juin 2026<br>
     Conforme au Règlement UE 2016/679 (RGPD) · Loi Informatique et Libertés n°78-17<br><br>
     © 2026 Gaspicheck-Labs. Tous droits réservés.
   </div>
